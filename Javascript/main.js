@@ -23,7 +23,7 @@ CryptoDailyRates().then(function DailyRates(URLData) {
 });
 
 const Cardtest = document.getElementById("test");
-const CardOne = document.getElementById("CardboxOne");
+const CardOne = document.getElementById("Cardbox");
 
 CardOne.addEventListener("click", function () {
   if (Cardtest.style.display === "flex") {
