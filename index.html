@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rick and morty</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Rick and Morty Index</h1>
-        <div class="buttons">
-            <a href="#">Home</a>
-            <a href="#">Seach</a>
-        </div>
-
+      <h1>Rick and Morty Index</h1>
+      <div class="buttons">
+        <a href="#">Home</a>
+        <a href="#">Seach</a>
+      </div>
     </header>
 
     <main>
+      <div class="card-window">
+        <div class="top-cards">
+          <div class="card Cardone">
+              <p>Morty Smith</p>
+              <div class="ForgroundDivOne Forground">
+                <p>Status: <span id="CardthreeStatu"></span></p>
+                <p>Origin: <span id="CardthreeOrign"></span></p>
+                <p>Gender: <span id="CardthreeGener"></span></p>
+                <p>Species: <span id="CardthreeSecies"></span></p>
+            </div>
+              
+          </div>
+          <div class="card Cardtwo">
+              <p>Rick Sanches</p>
+              <div class="ForgroundDivTwo Forground">
+                <p>Status: <span id="Cardthreetatus"></span></p>
+                <p>Origin: <span id="CardthreOrigin"></span></p>
+                <p>Gender: <span id="CardthreGender"></span></p>
+                <p>Species: <span id="CardtreeSpecies"></span></p>
+            </div>
+          </div>
 
-        <div class="card-window">
-            <div id="Cardbox" class="card card-box-one">
+          <div class="card Cardthree Forground">
+              <p id="test"> Summer Smith</p>
+              <div class="ForgroundDivThree">
+                  <p>Status: <span id="CardthreeStatus"></span></p>
+                  <p>Origin: <span id="CardthreeOrigin"></span></p>
+                  <p>Gender: <span id="CardthreeGender"></span></p>
+                  <p>Species: <span id="CardthreeSpecies"></span></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="bottom-cards">
+          <div class="card Cardfour"></div>
+          <div class="card Cardfive"></div>
+          <div class="card Cardsix"></div>
+        </div>
+
+        <!-- <div id="Cardbox" class="card card-box-one">
                 <div class="card-one" id="test">
                     <div class="text">
                         <h1><span>Morty Smith</span></h1>
@@ -40,8 +75,8 @@
                         <p>Origin: <span id="CardOneOrigin"></span></p>
                     </div>
                 </div>
-            </div>
-
+            </div> -->
+        <!-- 
             <div id="Cardbox" class="card card-box-two">
                 <div class="card-two" id="test">
                     <div class="text">
@@ -140,11 +175,9 @@
                         <p>Origin: <span id="CardOneOrigin"></span></p>
                     </div>
                 </div>
-            </div>
-
-        </div>
+            </div> -->
+      </div>
     </main>
     <script src="Javascript/main.js"></script>
-</body>
-
+  </body>
 </html>

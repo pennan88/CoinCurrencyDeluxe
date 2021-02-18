@@ -1,12 +1,12 @@
-const CardOneStatus = document.getElementById("CardOneSatus");
-const CardOneGender = document.getElementById("CardOneGender");
-const CardOneSpecies = document.getElementById("CardOneSpecies");
-const CardOneOrigin = document.getElementById("CardOneOrigin");
+const CardOneStatus = document.getElementById("CardthreeStatus");
+const CardOneGender = document.getElementById("CardthreeGender");
+const CardOneSpecies = document.getElementById("CardthreeSpecies");
+const CardOneOrigin = document.getElementById("CardthreeOrigin");
 const hidecard = document.getElementById("hidecard");
 
 async function CryptoDailyRates() {
   const url = new URL(`https://rickandmortyapi.com/api/character`);
-  // url.searchParams.append("name", Charname);
+  url.searchParams.append("name", "summer");
 
   const response = await fetch(url);
   let URLData = await response.json();
@@ -16,21 +16,38 @@ async function CryptoDailyRates() {
 
 CryptoDailyRates().then(function DailyRates(URLData) {
   console.log(URLData);
-  CardOneStatus.innerHTML = URLData.results[1].status;
-  CardOneGender.innerHTML = URLData.results[1].gender;
-  CardOneSpecies.innerHTML = URLData.results[1].species;
-  CardOneOrigin.innerHTML = URLData.results[1].origin.name;
+  CardOneStatus.innerHTML = URLData.results[0].status;
+  CardOneGender.innerHTML = URLData.results[0].gender;
+  CardOneSpecies.innerHTML = URLData.results[0].species;
+  CardOneOrigin.innerHTML = URLData.results[0].origin.name;
 });
 
-const Cardtest = document.getElementById("test");
-const CardOne = document.getElementById("Cardbox");
+const ForgroundDivOne = document.querySelector(".ForgroundDivOne");
+const ForgroundDivTwo = document.querySelector(".ForgroundDivTwo");
+const ForgroundDivThree = document.querySelector(".ForgroundDivThree");
+const Cardone = document.querySelector(".Cardone");
+const Cardtwo = document.querySelector(".Cardtwo");
+const Cardthree = document.querySelector(".Cardthree");
 
-CardOne.addEventListener("click", function () {
-  if (Cardtest.style.display === "flex") {
-    Cardtest.style.display = "none";
-    hidecard.style.display = "flex";
+
+Cardone.addEventListener("click", function () {
+  if (ForgroundDivOne.style.display === "none") {
+    ForgroundDivOne.style.display = "flex";
   } else {
-    Cardtest.style.display = "flex";
-    hidecard.style.display = "none";
+    ForgroundDivOne.style.display = "none";
+  }
+});
+Cardtwo.addEventListener("click", function () {
+  if (ForgroundDivTwo.style.display === "none") {
+    ForgroundDivTwo.style.display = "flex";
+  } else {
+    ForgroundDivTwo.style.display = "none";
+  }
+});
+Cardthree.addEventListener("click", function () {
+  if (ForgroundDivThree.style.display === "none") {
+    ForgroundDivThree.style.display = "flex";
+  } else {
+    ForgroundDivThree.style.display = "none";
   }
 });
