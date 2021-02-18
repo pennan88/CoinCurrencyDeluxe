@@ -12,7 +12,9 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Quicksand", sans-serif;
-  background-image: url(/images/rick-and-morty-wallpaper.jpg);
+  /* background-image: url(/images/rick-and-morty-wallpaper.jpg);
+   */
+  background-color: grey;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
