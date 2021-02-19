@@ -67,8 +67,8 @@ main {
 
 .card-window {
   /* border: 1px white solid; */
-  width: 1200px;
-  height: 85%;
+  width: 80%;
+  height: 90%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -104,8 +104,8 @@ main {
 .card {
   background-color: white;
   border: 1px black solid;
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +148,7 @@ main {
 .ForgroundDivOne,
 .ForgroundDivTwo,
 .ForgroundDivThree {
-  background-color: rgba(0, 0, 0, 0.199);
+  background-color: rgba(0, 0, 0, 0.356);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -159,10 +159,12 @@ main {
   color: white;
 }
 
-.Forground,
-p .Forground,
-span {
+.Forground span {
   font-size: 15px;
+}
+
+.Forground p {
+  padding: 0 0 5px 5px;
 }
 
 /* End Main */
