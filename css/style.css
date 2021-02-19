@@ -145,9 +145,6 @@ main {
   color: white;
   display: flex;
 }
-
-/* End Main */
-
 .ForgroundDivOne,
 .ForgroundDivTwo,
 .ForgroundDivThree {
@@ -162,6 +159,10 @@ main {
   color: white;
 }
 
-#test {
-  z-index: 10;
+.Forground,
+p .Forground,
+span {
+  font-size: 15px;
 }
+
+/* End Main */
