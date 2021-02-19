@@ -1,5 +1,5 @@
 //bugg med sista page(34) bara 11 objekt. Lösning nu är mat.random(33)
-console.log(testArray[0].Name);
+console.log(CardArray[0].Card);
 async function homePageApi() {
   let randomNum = Math.floor(Math.random() * 33);
   const url = new URL(`https://rickandmortyapi.com/api/character`);
@@ -23,24 +23,32 @@ homePageApi().then(function ApiData(URLData) {
   console.log(randomNum2);
 });
 
-CardOne.Card.addEventListener("click", function () {
-  if (CardOne.ForgroundDiv.style.display === "none") {
-    CardOne.ForgroundDiv.style.display = "flex";
+CardArray[0].Card.addEventListener("click", function () {
+  if (CardArray[0].ForgroundDiv.style.display === "none") {
+    CardArray[0].ForgroundDiv.style.display = "flex";
   } else {
-    CardOne.ForgroundDiv.style.display = "none";
+    CardArray[0].ForgroundDiv.style.display = "none";
   }
 });
-Cardtwo.addEventListener("click", function () {
-  if (ForgroundDivTwo.style.display === "none") {
-    ForgroundDivTwo.style.display = "flex";
+
+CardArray[1].Card.addEventListener("click", function () {
+  if (CardArray[1].ForgroundDiv.style.display === "none") {
+    CardArray[1].ForgroundDiv.style.display = "flex";
   } else {
-    ForgroundDivTwo.style.display = "none";
+    CardArray[1].ForgroundDiv.style.display = "none";
   }
 });
-Cardthree.addEventListener("click", function () {
-  if (ForgroundDivThree.style.display === "none") {
-    ForgroundDivThree.style.display = "flex";
+CardArray[2].Card.addEventListener("click", function () {
+  if (CardArray[2].ForgroundDiv.style.display === "none") {
+    CardArray[2].ForgroundDiv.style.display = "flex";
   } else {
-    ForgroundDivThree.style.display = "none";
+    CardArray[2].ForgroundDiv.style.display = "none";
+  }
+});
+CardArray[3].Card.addEventListener("click", function () {
+  if (CardArray[3].ForgroundDiv.style.display === "none") {
+    CardArray[3].ForgroundDiv.style.display = "flex";
+  } else {
+    CardArray[3].ForgroundDiv.style.display = "none";
   }
 });

@@ -1,71 +1,67 @@
-
-
-
 let CardOne = {
- Card : document.querySelector(".Cardone"),
- Status : document.getElementById("CardoneStatus"),
- Gender : document.getElementById("CardoneGener"),
- Species : document.getElementById("CardoneSpecies"),
- Origin : document.getElementById("CardoneOrign"),
- ForgroundDiv : document.querySelector(".ForgroundDivOne"),
- Name : document.getElementById("CardoneName"),
+  Card: document.querySelector(".Cardone"),
+  Status: document.getElementById("CardoneStatus"),
+  Gender: document.getElementById("CardoneGener"),
+  Species: document.getElementById("CardoneSpecies"),
+  Origin: document.getElementById("CardoneOrign"),
+  ForgroundDiv: document.querySelector(".ForgroundDivOne"),
+  Name: document.getElementById("CardoneName"),
 };
 
+let CardTwo = {
+  Card: document.querySelector(".Cardtwo"),
+  Status: document.getElementById("CardtwoStatus"),
+  Gender: document.getElementById("CardtwoGender"),
+  Species: document.getElementById("CardtwoSpecies"),
+  Origin: document.getElementById("CardtwoOrigin"),
+  ForgroundDiv: document.querySelector(".ForgroundDivTwo"),
+  Name: document.getElementById("CardtwoName"),
+};
 
 // CardTwo
-const Cardtwo = document.querySelector(".Cardtwo");
-const CardTwoStatus = document.getElementById("CardtwoStatus");
-const CardTwoGender = document.getElementById("CardtwoGender");
-const CardTwoSpecies = document.getElementById("CardtwoSpecies");
-const CardTwoOrigin = document.getElementById("CardtwoOrigin");
-const ForgroundDivTwo = document.querySelector(".ForgroundDivTwo");
 
-const CardtwoName = document.getElementById("CardtwoName");
-
+let CardThree = {
+  Card: document.querySelector(".Cardthree"),
+  Status: document.getElementById("CardthreeStatus"),
+  Gender: document.getElementById("CardthreeGender"),
+  Species: document.getElementById("CardthreeSpecies"),
+  Origin: document.getElementById("CardthreeOrigin"),
+  ForgroundDiv: document.querySelector(".ForgroundDivThree"),
+  Name: document.getElementById("CardthreeName"),
+};
 // Cardthree
-const Cardthree = document.querySelector(".Cardthree");
-const CardthreeStatus = document.getElementById("CardthreeStatus");
-const CardthreeGender = document.getElementById("CardthreeGender");
-const CardthreeSpecies = document.getElementById("CardthreeSpecies");
-const CardthreeOrigin = document.getElementById("CardthreeOrigin");
-const ForgroundDivThree = document.querySelector(".ForgroundDivThree");
 
-const CardthreeName = document.getElementById("CardthreeName");
-
+let CardFour = {
+  Card: document.querySelector(".Cardfour"),
+  Status: document.getElementById("CardfourStatus"),
+  Gender: document.getElementById("CardfourGender"),
+  Species: document.getElementById("CardfourSpecies"),
+  Origin: document.getElementById("CardfourOrigin"),
+  ForgroundDiv: document.querySelector(".ForgroundDivFour"),
+  Name: document.getElementById("CardfourName"),
+};
 // CardFour
-const Cardfour = document.querySelector(".Cardfour");
-const CardfourStatus = document.getElementById("CardfourStatus");
-const CardfourGender = document.getElementById("CardfourGender");
-const CardfourSpecies = document.getElementById("CardfourSpecies");
-const CardfourOrigin = document.getElementById("CardfourOrigin");
-const ForgroundDivfour = document.querySelector(".ForgroundDivfour");
 
-const CardfourName = document.getElementById("CardfourName");
-
+let CardFive = {
+  Card: document.querySelector(".Cardfive"),
+  Status: document.getElementById("CardfiveStatus"),
+  Gender: document.getElementById("CardfiveGender"),
+  Species: document.getElementById("CardfiveSpecies"),
+  Origin: document.getElementById("CardfiveOrigin"),
+  ForgroundDiv: document.querySelector(".ForgroundDivFive"),
+  Name: document.getElementById("CardfiveName"),
+};
 // CardFive
-const Cardfive = document.querySelector(".Cardfive");
-const CardfiveStatus = document.getElementById("CardfiveStatus");
-const CardfiveGender = document.getElementById("CardfiveGender");
-const CardfiveSpecies = document.getElementById("CardfiveSpecies");
-const CardfiveOrigin = document.getElementById("CardfiveOrigin");
-const ForgroundDivFive = document.querySelector(".ForgroundDivFive");
 
-const CardfiveName = document.getElementById("CardfourName");
-
+let CardSix = {
+  Card: document.querySelector(".Cardsix"),
+  Status: document.getElementById("CardsixStatus"),
+  Gender: document.getElementById("CardsixGender"),
+  Species: document.getElementById("CardsixSpecies"),
+  Origin: document.getElementById("CardsixOrigin"),
+  ForgroundDiv: document.querySelector(".ForgroundDivSix"),
+  Name: document.getElementById("CardsixName"),
+};
 // CardSix
-const Cardsix = document.querySelector(".Cardsix");
-const CardsixStatus = document.getElementById("CardsixStatus");
-const CardsixGender = document.getElementById("CardsixGender");
-const CardsixSpecies = document.getElementById("CardsixSpecies");
-const CardsixOrigin = document.getElementById("CardsixOrigin");
-const ForgroundDivSix = document.querySelector(".ForgroundDivSix");
 
-const CardsixName = document.getElementById("CardsixName");
-
-
-let testArray = 
-   [
-     CardOne,
-
-
-   ]
+let CardArray = [CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix];
