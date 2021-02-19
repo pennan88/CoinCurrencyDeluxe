@@ -1,1 +1,1 @@
-https://pennan88.github.io/CoinCurrencyDeluxe/
+https://pennan88.github.io/RickAndMortyIndex/
