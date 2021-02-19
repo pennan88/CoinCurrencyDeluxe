@@ -1,5 +1,5 @@
 //bugg med sista page(34) bara 11 objekt. Lösning nu är mat.random(33)
-
+console.log(testArray[0].Name);
 async function homePageApi() {
   let randomNum = Math.floor(Math.random() * 33 + 1);
   const url = new URL(`https://rickandmortyapi.com/api/character`);
@@ -14,20 +14,20 @@ async function homePageApi() {
 let randomNum2 = Math.floor(Math.random() * 20);
 homePageApi().then(function ApiData(URLData) {
   console.log(URLData);
-  CardOneStatus.innerHTML = URLData.results[randomNum2].status;
-  CardOneGender.innerHTML = URLData.results[randomNum2].gender;
-  CardOneSpecies.innerHTML = URLData.results[randomNum2].species;
-  CardOneOrigin.innerHTML = URLData.results[randomNum2].origin.name;
-  CardoneName.innerHTML = URLData.results[randomNum2].name;
-  Cardone.style.background = `url(${URLData.results[randomNum2].image})`;
+  CardOne.Status.innerHTML = URLData.results[randomNum2].status;
+  CardOne.Gender.innerHTML = URLData.results[randomNum2].gender;
+  CardOne.Species.innerHTML = URLData.results[randomNum2].species;
+  CardOne.Origin.innerHTML = URLData.results[randomNum2].origin.name;
+  CardOne.Name.innerHTML = URLData.results[randomNum2].name;
+  CardOne.Card.style.background = `url(${URLData.results[randomNum2].image})`;
   console.log(randomNum2);
 });
 
-Cardone.addEventListener("click", function () {
-  if (ForgroundDivOne.style.display === "none") {
-    ForgroundDivOne.style.display = "flex";
+CardOne.Card.addEventListener("click", function () {
+  if (CardOne.ForgroundDiv.style.display === "none") {
+    CardOne.ForgroundDiv.style.display = "flex";
   } else {
-    ForgroundDivOne.style.display = "none";
+    CardOne.ForgroundDiv.style.display = "none";
   }
 });
 Cardtwo.addEventListener("click", function () {

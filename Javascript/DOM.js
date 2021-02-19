@@ -1,12 +1,16 @@
-// Cardone
-const Cardone = document.querySelector(".Cardone");
-const CardOneStatus = document.getElementById("CardoneStatus");
-const CardOneGender = document.getElementById("CardoneGener");
-const CardOneSpecies = document.getElementById("CardoneSpecies");
-const CardOneOrigin = document.getElementById("CardoneOrign");
-const ForgroundDivOne = document.querySelector(".ForgroundDivOne");
 
-const CardoneName = document.getElementById("CardoneName");
+
+
+let CardOne = {
+ Card : document.querySelector(".Cardone"),
+ Status : document.getElementById("CardoneStatus"),
+ Gender : document.getElementById("CardoneGener"),
+ Species : document.getElementById("CardoneSpecies"),
+ Origin : document.getElementById("CardoneOrign"),
+ ForgroundDiv : document.querySelector(".ForgroundDivOne"),
+ Name : document.getElementById("CardoneName"),
+};
+
 
 // CardTwo
 const Cardtwo = document.querySelector(".Cardtwo");
@@ -57,3 +61,11 @@ const CardsixOrigin = document.getElementById("CardsixOrigin");
 const ForgroundDivSix = document.querySelector(".ForgroundDivSix");
 
 const CardsixName = document.getElementById("CardsixName");
+
+
+let testArray = 
+   [
+     CardOne,
+
+
+   ]
