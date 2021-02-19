@@ -5,8 +5,8 @@ const CardOneOrigin = document.getElementById("CardthreeOrigin");
 const hidecard = document.getElementById("hidecard");
 
 async function CryptoDailyRates() {
-  const url = new URL(`https://rickandmortyapi.com/api/character`);
-  url.searchParams.append("name", "summer");
+  const url = new URL("https://rickandmortyapi.com/api/character/");
+  url.searchParams.append("page", "10");
 
   const response = await fetch(url);
   let URLData = await response.json();
@@ -28,7 +28,6 @@ const ForgroundDivThree = document.querySelector(".ForgroundDivThree");
 const Cardone = document.querySelector(".Cardone");
 const Cardtwo = document.querySelector(".Cardtwo");
 const Cardthree = document.querySelector(".Cardthree");
-
 
 Cardone.addEventListener("click", function () {
   if (ForgroundDivOne.style.display === "none") {
