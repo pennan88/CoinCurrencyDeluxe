@@ -33,7 +33,6 @@ const Cardone = document.querySelector(".Cardone");
 const Cardtwo = document.querySelector(".Cardtwo");
 const Cardthree = document.querySelector(".Cardthree");
 
-
 Cardone.addEventListener("click", function () {
   if (ForgroundDivOne.style.display === "none") {
     ForgroundDivOne.style.display = "flex";
