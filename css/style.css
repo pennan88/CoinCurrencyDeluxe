@@ -151,7 +151,10 @@ main {
 }
 .ForgroundDivOne,
 .ForgroundDivTwo,
-.ForgroundDivThree {
+.ForgroundDivThree,
+.ForgroundDivFour,
+.ForgroundDivFive,
+.ForgroundDivSix {
   background-color: rgba(0, 0, 0, 0.356);
   position: absolute;
   width: 100%;

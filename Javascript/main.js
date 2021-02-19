@@ -1,10 +1,7 @@
 //bugg med sista page(34) bara 11 objekt. Lösning nu är mat.random(33)
 
-
-
-
 async function homePageApi() {
-  let randomNum = Math.floor((Math.random() * 33) + 1);
+  let randomNum = Math.floor(Math.random() * 33 + 1);
   const url = new URL(`https://rickandmortyapi.com/api/character`);
   url.searchParams.append("page", randomNum);
 
@@ -14,24 +11,17 @@ async function homePageApi() {
   return URLData;
 }
 
-let randomNum2 = Math.floor((Math.random() * 20) + 1);
+let randomNum2 = Math.floor(Math.random() * 20);
 homePageApi().then(function ApiData(URLData) {
   console.log(URLData);
   CardOneStatus.innerHTML = URLData.results[randomNum2].status;
   CardOneGender.innerHTML = URLData.results[randomNum2].gender;
   CardOneSpecies.innerHTML = URLData.results[randomNum2].species;
   CardOneOrigin.innerHTML = URLData.results[randomNum2].origin.name;
-  nameTest.innerHTML = URLData.results[randomNum2].name;
-  
-  cardThree.style.background = `url(${URLData.results[randomNum2].image})`;
+  CardoneName.innerHTML = URLData.results[randomNum2].name;
+  Cardone.style.background = `url(${URLData.results[randomNum2].image})`;
+  console.log(randomNum2);
 });
-
-const ForgroundDivOne = document.querySelector(".ForgroundDivOne");
-const ForgroundDivTwo = document.querySelector(".ForgroundDivTwo");
-const ForgroundDivThree = document.querySelector(".ForgroundDivThree");
-const Cardone = document.querySelector(".Cardone");
-const Cardtwo = document.querySelector(".Cardtwo");
-const Cardthree = document.querySelector(".Cardthree");
 
 Cardone.addEventListener("click", function () {
   if (ForgroundDivOne.style.display === "none") {
