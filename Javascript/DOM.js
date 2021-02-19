@@ -18,8 +18,6 @@ let CardTwo = {
   Name: document.getElementById("CardtwoName"),
 };
 
-// CardTwo
-
 let CardThree = {
   Card: document.querySelector(".Cardthree"),
   Status: document.getElementById("CardthreeStatus"),
@@ -29,7 +27,6 @@ let CardThree = {
   ForgroundDiv: document.querySelector(".ForgroundDivThree"),
   Name: document.getElementById("CardthreeName"),
 };
-// Cardthree
 
 let CardFour = {
   Card: document.querySelector(".Cardfour"),
@@ -40,7 +37,6 @@ let CardFour = {
   ForgroundDiv: document.querySelector(".ForgroundDivFour"),
   Name: document.getElementById("CardfourName"),
 };
-// CardFour
 
 let CardFive = {
   Card: document.querySelector(".Cardfive"),
@@ -51,7 +47,6 @@ let CardFive = {
   ForgroundDiv: document.querySelector(".ForgroundDivFive"),
   Name: document.getElementById("CardfiveName"),
 };
-// CardFive
 
 let CardSix = {
   Card: document.querySelector(".Cardsix"),
@@ -62,6 +57,5 @@ let CardSix = {
   ForgroundDiv: document.querySelector(".ForgroundDivSix"),
   Name: document.getElementById("CardsixName"),
 };
-// CardSix
 
 let CardArray = [CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix];
