@@ -3,9 +3,10 @@
 
 
 async function homePageApi() {
-  let randomNum = Math.floor(Math.random() * 33);
+  let RandomPage = Math.floor(Math.random() * 33);
+  // console.log("Page: ", RandomPage)
   const url = new URL(`https://rickandmortyapi.com/api/character`);
-  url.searchParams.append("page", randomNum);
+  url.searchParams.append("page", RandomPage);
 
   const response = await fetch(url);
   let URLData = await response.json();
@@ -15,16 +16,19 @@ async function homePageApi() {
 
 
 for(let i = 0; i < 6; i++){
-  let randomNum2 = Math.floor(Math.random() * 20);
+  let RandomNum = Math.floor(Math.random() * 20);
   homePageApi().then(function ApiData(URLData) {
   console.log(URLData);
-  CardArray[i].Status.innerHTML = URLData.results[randomNum2].status;
-  CardArray[i].Gender.innerHTML = URLData.results[randomNum2].gender;
-  CardArray[i].Species.innerHTML = URLData.results[randomNum2].species;
-  CardArray[i].Origin.innerHTML = URLData.results[randomNum2].origin.name;
-  CardArray[i].Name.innerHTML = URLData.results[randomNum2].name;
-  CardArray[i].Card.style.background = `url(${URLData.results[randomNum2].image})`;
-  console.log(randomNum2);
+  CardArray[i].Status.innerHTML = URLData.results[RandomNum].status;
+  CardArray[i].Gender.innerHTML = URLData.results[RandomNum].gender;
+  CardArray[i].Species.innerHTML = URLData.results[RandomNum].species;
+  CardArray[i].Origin.innerHTML = URLData.results[RandomNum].origin.name;
+  CardArray[i].Name.innerHTML = URLData.results[RandomNum].name;
+
+  CardArray[i].Card.style.background = `url(${URLData.results[RandomNum].image})`;
+  CardArray[i].Card.style.backgroundPosition = "center";
+  CardArray[i].Card.style.backgroundSize = "cover";
+  console.log(RandomNum);
 });
 }
 

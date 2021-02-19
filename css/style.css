@@ -117,22 +117,22 @@ main {
   margin: 10px 0;
   border-radius: 20px;
   cursor: pointer;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+  color: black;
 }
 
 .card img {
   position: relative;
   width: 90%;
+  
   margin-top: 10px;
 }
 
 .card p {
   /* background-color: teal; */
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.438);
 }
 
 .ForgroundDivOne,
