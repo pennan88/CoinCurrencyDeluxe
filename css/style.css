@@ -117,6 +117,10 @@ main {
   margin: 10px 0;
   border-radius: 20px;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .card img {
@@ -130,25 +134,7 @@ main {
   font-size: 20px;
   font-weight: bold;
 }
-.Cardone {
-  background-image: url(../images/Morty.jpeg);
-  background-position: center;
-  background-size: cover;
-  color: white;
-  display: flex;
-}
-.Cardtwo {
-  background-image: url(../images/Rick.jpeg);
-  background-position: center;
-  background-size: cover;
-  color: white;
-  display: flex;
-}
-.Cardthree {
-  background-image: url(../images/Summer.jpeg);
-  color: white;
-  display: flex;
-}
+
 .ForgroundDivOne,
 .ForgroundDivTwo,
 .ForgroundDivThree,

@@ -1,7 +1,7 @@
 //bugg med sista page(34) bara 11 objekt. Lösning nu är mat.random(33)
 
 async function homePageApi() {
-  let randomNum = Math.floor(Math.random() * 33 + 1);
+  let randomNum = Math.floor(Math.random() * 33);
   const url = new URL(`https://rickandmortyapi.com/api/character`);
   url.searchParams.append("page", randomNum);
 
