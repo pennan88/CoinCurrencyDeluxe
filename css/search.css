@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  /* border: 2px red solid; */
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-card {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.233);
+  border: 1px solid black;
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.search-window {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.233);
+  position: relative;
+  width: 70%;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Search-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Search-div input {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.Search-div a {
+  border: 1px solid white;
+  margin-left: 10px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s ease background-color;
+  transition-property: color background-color;
+}
+
+.Search-div a:hover {
+  background-color: #97ce4c;
+  border-color: #01a3a3;
+  color: #01a3a3;
+}
+
+.Checkbox-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}

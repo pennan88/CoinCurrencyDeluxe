@@ -21,7 +21,6 @@ for (let i = 0; i < 6; i++) {
     CardArray[i].Species.innerHTML = URLData.results[RandomNum].species;
     CardArray[i].Origin.innerHTML = URLData.results[RandomNum].origin.name;
     CardArray[i].Name.innerHTML = URLData.results[RandomNum].name;
-
     CardArray[
       i
     ].Card.style.background = `url(${URLData.results[RandomNum].image})`;
