@@ -90,7 +90,7 @@ main {
   position: relative;
 }
 
-.testcontainer {
+.outcard-container {
   background-color: rgba(46, 46, 46, 0.836);
   display: flex;
   align-items: center;

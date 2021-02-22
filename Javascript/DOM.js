@@ -1,3 +1,4 @@
+// Main page
 let CardOne = {
   Card: document.querySelector(".Cardone"),
   Status: document.getElementById("CardoneStatus"),
@@ -59,3 +60,11 @@ let CardSix = {
 };
 
 let CardArray = [CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix];
+
+// end of main page
+
+// search page
+let search = document.getElementById("Searchbar");
+const submitbtn = document.getElementById("submit-btn");
+
+// end of search page
