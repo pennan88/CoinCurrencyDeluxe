@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 a {
   text-decoration: none;
+}
+
+body {
+  background-image: url(../images/936813.png);
 }
 
 main {
@@ -12,17 +18,16 @@ main {
 }
 
 .main-card {
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.233);
-  border: 1px solid black;
+  margin-top: 50px;
   position: relative;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 .search-window {
-  border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.233);
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.164);
   position: relative;
   width: 70%;
   height: 100px;
@@ -42,6 +47,8 @@ main {
 .Search-div input {
   font-size: 16px;
   padding: 5px 10px;
+  border-radius: 25px;
+  border: 0;
 }
 
 .Search-div a {
@@ -51,6 +58,7 @@ main {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 20px;
   transition: 0.5s ease background-color;
   transition-property: color background-color;
 }
@@ -69,29 +77,44 @@ main {
   width: 100%;
 }
 
-.carousel{
+.carousel {
   height: 100%;
 }
 
-.carousel-inner{
-  /* max-width: 100%;
-  max-height: 100%; */
-  
+.carousel-inner {
+  height: 100%;
+  position: relative;
+}
+.carousel-item {
+  height: 100%;
+  position: relative;
 }
 
-/* .test-car{
+.testcontainer {
+  background-color: rgba(46, 46, 46, 0.836);
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  border-radius: 15px;
 }
 
-.img-container{
+.img-container img {
   height: 100%;
-  width: 100%;
-  border: 1px solid green;
 }
 
-.txt-container{
+.text-container {
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
-  width: 100%;
-  border: 1px solid red;
-} */
+  width: 40%;
+  color: white;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important;
+  color: red !important;
+}
