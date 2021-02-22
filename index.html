@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body onclick="myFunction(event)">
+<body>
     <header>
         <h1>Rick and Morty Index</h1>
         <div class="buttons">
@@ -23,7 +23,7 @@
         <div class="card-window">
 
             <div class="top-cards">
-                <div id="test" class="card Cardone">
+                <div id="test" onclick="clickFunction(this)" class="card Cardone">
                     <p id="CardoneName"></p>
                     <div class="ForgroundDivOne Forground">
                         <p>Status: <span id="CardoneStatus"></span></p>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="card Cardtwo">
+                <div class="card Cardtwo" onclick="clickFunction(this)">
                     <p id="CardtwoName"></p>
                     <div class="ForgroundDivTwo Forground">
                         <p>Status: <span id="CardtwoStatus"></span></p>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <div class="card Cardthree ">
+                <div class="card Cardthree " onclick="clickFunction(this)">
                     <p id="CardthreeName"></p>
                     <div class="ForgroundDivThree Forground">
                         <p>Status: <span id="CardthreeStatus"></span></p>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="bottom-cards">
-                <div class="card Cardfour">
+                <div class="card Cardfour" onclick="clickFunction(this)">
                     <p id="CardfourName"></p>
                     <div class="ForgroundDivFour Forground">
                         <p>Status: <span id="CardfourStatus"></span></p>
@@ -64,7 +64,7 @@
                         <p>Species: <span id="CardfourSpecies"></span></p>
                     </div>
                 </div>
-                <div class="card Cardfive">
+                <div class="card Cardfive" onclick="clickFunction(this)">
                     <p id="CardfiveName"></p>
                     <div class="ForgroundDivFive Forground">
                         <p>Status: <span id="CardfiveStatus"></span></p>
@@ -73,7 +73,7 @@
                         <p>Species: <span id="CardfiveSpecies"></span></p>
                     </div>
                 </div>
-                <div class="card Cardsix">
+                <div class="card Cardsix" onclick="clickFunction(this)">
                     <p id="CardsixName"></p>
                     <div class="ForgroundDivSix Forground">
                         <p>Status: <span id="CardsixStatus"></span></p>
