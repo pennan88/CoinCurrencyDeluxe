@@ -27,7 +27,7 @@ main {
 .search-window {
   /* border: 1px solid black; */
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.164);
+  background-color: rgba(39, 39, 39, 0.164);
   position: relative;
   width: 70%;
   height: 100px;
@@ -57,7 +57,7 @@ main {
   text-decoration: none;
   border: 0;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 8px;
   color: #9bcb71;
   background: #00afc7;
   text-transform: uppercase;
