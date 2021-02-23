@@ -52,22 +52,26 @@ main {
 }
 
 #submit-btn {
-  border: 1px solid white;
   margin-left: 10px;
   padding: 5px 10px;
-  color: white;
   text-decoration: none;
-  background-color: transparent;
+  border: 0;
   font-weight: bold;
   border-radius: 20px;
-  transition: 0.5s ease background-color;
-  transition-property: color background-color;
+  color: #9bcb71;
+  background: #00afc7;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 #submit-btn:hover {
-  background-color: #97ce4c;
-  border-color: #01a3a3;
-  color: #01a3a3;
+  -webkit-box-shadow: 0 0 10px 7px #9bcb71;
+  -moz-box-shadow: 0 0 10px 7px #9bcb71;
+  box-shadow: 0 0 10px 7px #9bcb71;
+}
+
+.remove-outline {
+  outline: none;
 }
 
 .Checkbox-div {

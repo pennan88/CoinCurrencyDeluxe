@@ -41,21 +41,21 @@ header h1 {
   margin: 10px 0;
 }
 .buttons a {
-  color: white;
   margin: 0 10px;
-  text-decoration: none;
-  border: 1px solid;
   padding: 5px 10px;
   font-size: 20px;
-  border-radius: 15px;
+  text-decoration: none;
+  color: #9bcb71;
+  background: #00afc7;
+  border-radius: 4px;
   font-weight: bold;
-  transition: 0.5s ease background-color;
-  transition-property: color background-color;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 .buttons a:hover {
-  background-color: #97ce4c;
-  border-color: #01a3a3;
-  color: #01a3a3;
+  -webkit-box-shadow: 0 0 10px 7px #9bcb71;
+  -moz-box-shadow: 0 0 10px 7px #9bcb71;
+  box-shadow: 0 0 10px 7px #9bcb71;
 }
 /* End Header */
