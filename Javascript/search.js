@@ -1,3 +1,4 @@
+"use strict";
 async function GetcharacterAPI(character) {
   const url = new URL(`https://rickandmortyapi.com/api/character/`);
   url.searchParams.append("name", character);
@@ -9,7 +10,7 @@ async function GetcharacterAPI(character) {
 }
 
 submitbtn.addEventListener("click", function () {
-  character = search.value;
+  let character = search.value;
   GetcharacterAPI(character).then(function APIdata(data) {
     console.log(data.results);
     CreateCard(data.results);

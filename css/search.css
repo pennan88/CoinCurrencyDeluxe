@@ -115,6 +115,7 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+
   width: 40%;
   color: white;
 }

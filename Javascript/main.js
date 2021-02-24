@@ -1,3 +1,4 @@
+"use strict";
 //bugg med sista page(34) bara 11 objekt. Lösning nu är mat.random(33)
 
 async function homePageApi() {
@@ -32,7 +33,7 @@ for (let i = 0; i < 6; i++) {
 
 function clickFunction(card) {
   const b = card.getElementsByClassName("Forground")[0];
-  if (b.style.display === "none") {
+  if (b.style.display === "none" || b.style.display === "") {
     b.style.display = "flex";
   } else {
     b.style.display = "none";

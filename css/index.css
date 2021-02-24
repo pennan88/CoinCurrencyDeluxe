@@ -73,7 +73,9 @@ main {
   margin: 0 !important;
   background-color: rgba(206, 206, 206, 0.623);
 }
-
+.Forground {
+  display: none;
+}
 .ForgroundDivOne,
 .ForgroundDivTwo,
 .ForgroundDivThree,
@@ -84,7 +86,6 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: none;
   flex-direction: column;
   justify-content: flex-end;
   border-radius: 20px;

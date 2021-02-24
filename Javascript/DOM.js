@@ -1,3 +1,5 @@
+"use strict";
+
 // Main page
 let CardOne = {
   Card: document.querySelector(".Cardone"),
