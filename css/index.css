@@ -2,7 +2,6 @@
 
 main {
   position: relative;
-  /* border: 2px red solid; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -10,7 +9,6 @@ main {
 }
 
 .card-window {
-  /* border: 1px white solid; */
   width: 80%;
   height: 90%;
   margin: 10px 0;
@@ -26,7 +24,6 @@ main {
 }
 
 .top-cards {
-  /* border: 3px black solid; */
   width: 100%;
   height: 100%;
   position: relative;
@@ -40,7 +37,6 @@ main {
   height: 100%;
   position: relative;
   display: flex;
-  /* border: 3px red solid; */
   align-items: center;
   flex-direction: column;
 }
@@ -69,7 +65,6 @@ main {
 }
 
 .card p {
-  /* background-color: teal; */
   font-size: 1rem;
   font-weight: bold;
   margin: 0 !important;
@@ -103,50 +98,44 @@ main {
   font-size: 1rem;
 }
 
-
-@media screen and (min-width: 480px){
-
+@media screen and (min-width: 480px) {
 }
-@media screen and (min-width: 768px){
-  .top-cards, .bottom-cards{
-      flex-direction: row;
-      justify-content: space-around;
+@media screen and (min-width: 768px) {
+  .top-cards,
+  .bottom-cards {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .card{
+  .card {
     width: 170px;
     height: 230px;
-
   }
-  main{
+  main {
     height: 80vh;
   }
-
 }
-@media screen and (min-width: 1024px){
-  .top-cards{
+@media screen and (min-width: 1024px) {
+  .top-cards {
     align-items: flex-start;
-
   }
-  .bottom-cards{
+  .bottom-cards {
     align-items: flex-end;
   }
-  .card{
+  .card {
     width: 200px;
     height: 290px;
-
   }
-
 }
-@media screen and (min-width: 1200px){
-  .card-window{
+@media screen and (min-width: 1200px) {
+  .card-window {
     width: 70%;
   }
-  .top-cards, .bottom-cards{
+  .top-cards,
+  .bottom-cards {
     justify-content: space-between;
     padding: 0 20px;
   }
-
 }
 
 /* End Main */

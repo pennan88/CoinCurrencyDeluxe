@@ -10,7 +10,6 @@ body {
 
 main {
   position: relative;
-  /* border: 2px red solid; */
   height: 85vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@ main {
 }
 
 .search-window {
-  /* border: 1px solid black; */
   border-radius: 15px;
   background-color: rgba(39, 39, 39, 0.164);
   position: relative;
@@ -102,7 +100,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
   height: 100%;
   border-radius: 15px;
 }
@@ -119,7 +116,6 @@ main {
 }
 
 .text-container {
-  /* border: 1px solid greenyellow; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -163,7 +159,6 @@ main {
     padding: 0;
   }
   .img-container img {
-    /* margin: auto; */
     height: 75%;
     padding-left: 60px;
   }

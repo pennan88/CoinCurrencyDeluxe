@@ -3,7 +3,6 @@
 
 async function homePageApi() {
   let RandomPage = Math.floor(Math.random() * 33);
-  // console.log("Page: ", RandomPage)
   const url = new URL(`https://rickandmortyapi.com/api/character`);
   url.searchParams.append("page", RandomPage);
 

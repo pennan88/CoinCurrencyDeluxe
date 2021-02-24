@@ -18,15 +18,9 @@ label {
 }
 
 body {
-  /* box-sizing: border-box;
-  width: 100%;
-  max-height: 200vh; */
-  
   font-family: "Quicksand", sans-serif;
   background-image: url(../images/rick-and-morty-wallpaper.jpg);
   background-attachment: fixed;
-
-  /* background-color: grey; */
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +28,6 @@ body {
 }
 /* Header */
 header {
-  /* border: 1px white solid; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -44,7 +37,6 @@ header {
   align-self: center;
   align-self: center;
   background-color: rgba(39, 39, 39, 0.26);
-  
 }
 
 header h1 {
@@ -73,30 +65,25 @@ header h1 {
   box-shadow: 1px 1px 2px #b5fd4a, 0 0 1em #b0fd3c, 0 0 0.2em #a7ff24;
 }
 
-
-
 /* End Header */
 
-@media screen and (min-width: 480px){
-  header h1{
+@media screen and (min-width: 480px) {
+  header h1 {
     font-size: 40px;
-  } 
-  .buttons a{
+  }
+  .buttons a {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 768px) {
 }
-@media screen and (min-width: 1024px){
-  header h1{
+@media screen and (min-width: 1024px) {
+  header h1 {
     font-size: 60px;
-  } 
-  .buttons a{
+  }
+  .buttons a {
     font-size: 20px;
   }
-
 }
-@media screen and (min-width: 1200px){
-  
+@media screen and (min-width: 1200px) {
 }

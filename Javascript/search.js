@@ -29,8 +29,7 @@ function CreateCard(data) {
     if (i === 0) {
       carousel.className = "carousel-item active";
     } else {
-      carousel.className = 'carousel-item';
-      // carousel.data-bs-interval("10000");
+      carousel.className = "carousel-item";
     }
 
     let Parentdiv = document.querySelector(".carousel-inner");
