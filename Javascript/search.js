@@ -49,30 +49,15 @@ function CreateCard(data) {
     img.src = data[i].image;
     imgdiv.appendChild(img);
 
-    const textdiv = document.createElement("div");
-    textdiv.className = "text-container";
-
-    outcard.appendChild(textdiv);
-
-    const Nametext = document.createElement("h3");
-    const Gendertext = document.createElement("h3");
-    const SpeciesText = document.createElement("h3");
-    const Locatiotext = document.createElement("h3");
-    const Origintext = document.createElement("h3");
-    const Statustext = document.createElement("h3");
-
-    Nametext.innerHTML = `Name: ${data[i].name}`;
-    Gendertext.innerHTML = `Gender: ${data[i].gender}`;
-    SpeciesText.innerHTML = `Species: ${data[i].species}`;
-    Locatiotext.innerHTML = `Location: ${data[i].location.name}`;
-    Origintext.innerHTML = `Origin: ${data[i].origin.name}`;
-    Statustext.innerHTML = `Status: ${data[i].status}`;
-
-    textdiv.appendChild(Nametext);
-    textdiv.appendChild(Gendertext);
-    textdiv.appendChild(SpeciesText);
-    textdiv.appendChild(Locatiotext);
-    textdiv.appendChild(Origintext);
-    textdiv.appendChild(Statustext);
+    outcard.innerHTML += `
+    <div class='text-container'>
+      <h3>Name: ${data[i].name}</h3>
+      <h3>Gender: ${data[i].gender}</h3>
+      <h3>Species: ${data[i].species}</h3>
+      <h3>Location: ${data[i].location.name}</h3>
+      <h3>Origin: ${data[i].origin.name}</h3>
+      <h3>Status: ${data[i].status}</h3>
+    </div>
+    `;
   }
 }
