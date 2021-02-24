@@ -11,6 +11,7 @@ h1,
 h3,
 p,
 label {
+  color: #00afc7;
   -webkit-text-shadow: 1px 1px 2px #b5fd4a, 0 0 1em #b0fd3c, 0 0 0.2em #a7ff24;
   -moz-text-shadow: 1px 1px 2px #b5fd4a, 0 0 1em #b0fd3c, 0 0 0.2em #a7ff24;
   text-shadow: 1px 1px 2px #b5fd4a, 0 0 1em #b0fd3c, 0 0 0.2em #a7ff24;
