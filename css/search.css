@@ -20,7 +20,7 @@ main {
 .main-card {
   margin-top: 50px;
   position: relative;
-  width: 60%;
+  width: 80%;
   height: 60%;
 }
 
@@ -29,8 +29,8 @@ main {
   border-radius: 15px;
   background-color: rgba(39, 39, 39, 0.164);
   position: relative;
-  width: 70%;
-  height: 100px;
+  width: 90%;
+  height: 70px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ main {
 }
 
 .Search-div input {
-  font-size: 16px;
+  font-size: 13px;
   padding: 5px 10px;
   border-radius: 25px;
   border: 0;
@@ -53,6 +53,7 @@ main {
 
 #submit-btn {
   margin-left: 10px;
+  font-size: 13px;
   padding: 5px 10px;
   text-decoration: none;
   border: 0;
@@ -99,10 +100,18 @@ main {
 .outcard-container {
   background-color: rgba(46, 46, 46, 0.836);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100%;
   border-radius: 15px;
+}
+
+.img-container{
+  position: relative;
+  height: 50%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .img-container img {
@@ -111,16 +120,103 @@ main {
 
 .text-container {
   /* border: 1px solid greenyellow; */
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 40%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 50%;
+  width: 90%;
   color: white;
+  
+}
+
+.text-container h3{
+  font-size: 15px;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 5% !important;
-  color: red !important;
+  width: 10% !important;
+}
+
+@media screen and (min-width: 480px){
+  .img-container img {
+  height: 110%;
+}
+.text-container{
+  align-items: center;
+}
+
+}
+@media screen and (min-width: 768px){
+ .main-card{
+   width: 90%;
+ }
+
+  .outcard-container{
+   flex-direction: row;
+   
+ }
+ .img-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+ }
+ .img-container img{
+    /* margin: auto; */
+    height: 75%;
+    padding-left: 60px;
+ }
+ .text-container{
+   width: 50%;
+   height: 100%;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 40px;
+   
+ }
+ .text-container h3{
+   font-size: 20px;
+ }
+}
+@media screen and (min-width: 1024px){
+ .Search-div input{
+   font-size: 20px;
+ }
+ #submit-btn{
+   font-size: 20px;
+ }
+ .img-container img{
+   padding-left: 70px;
+ }
+ .text-container h3{
+   font-size: 25px;
+ }
+}
+@media screen and (min-width: 1200px){
+  
+  .text-container{
+    padding: 0;
+  }
+
+  .img-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+      background-size: 200%;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .main-card{
+      width: 60%;
+    }
+
+    
 }
